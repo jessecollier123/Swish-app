@@ -1,9 +1,9 @@
 package com.example.jesse1.swish.Controller
 
 import android.os.Bundle
+import com.example.jesse1.swish.Model.Player
 import com.example.jesse1.swish.R
-import com.example.jesse1.swish.Utilities.EXTRA_LEAGUE
-import com.example.jesse1.swish.Utilities.EXTRA_SKILL
+import com.example.jesse1.swish.Utilities.EXTRA_PLAYER
 import kotlinx.android.synthetic.main.activity_finish.*
 
 class FinishActivity : BaseActivity() {
@@ -12,9 +12,8 @@ class FinishActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_finish)
 
-        val league = intent.getStringExtra(EXTRA_LEAGUE)
-        val skill = intent.getStringExtra(EXTRA_SKILL)
+        val player = intent.getParcelableExtra<Player>(EXTRA_PLAYER)
 
-        searchLeaguesTxt.text = "Looking for a $league $skill league near you..."
+        searchLeaguesTxt.text = "Looking for a ${player.league} ${player.skill} league near you..."
     }
 }
