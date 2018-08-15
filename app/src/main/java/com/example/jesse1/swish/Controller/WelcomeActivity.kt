@@ -1,7 +1,8 @@
-package com.example.jesse1.swish
+package com.example.jesse1.swish.Controller
 
 import android.content.Intent
 import android.os.Bundle
+import com.example.jesse1.swish.R
 import kotlinx.android.synthetic.main.activity_welcome.*
 
 class WelcomeActivity : BaseActivity() {

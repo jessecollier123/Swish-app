@@ -1,4 +1,4 @@
-package com.example.jesse1.swish
+package com.example.jesse1.swish.Controller
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
